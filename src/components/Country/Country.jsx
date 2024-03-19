@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './country.css';
 
-const Country = ({ country , handleVisitedCountry }) => {
+const Country = ({ country , handleVisitedCountry , handleVisitedFlags }) => {
     // console.log(country);
     const { name, flags, population, area, capital, languages, cca3
     } = country;
@@ -34,6 +34,8 @@ const Country = ({ country , handleVisitedCountry }) => {
             }</small></p>
             <button onClick={() =>handleVisitedCountry(country)}>Mark visited</button>
             <br />
+            <button onClick={() => handleVisitedFlags(country.flags.png)}>Add Flag countries</button>
+            <br />
             <button onClick={handleVisited}>{visited ? 'Visited' : 'Going'}</button>
             { visited ? 'I have visited this country.' : 'I want to visit.'}
             {/* { visited && 'I have visited this country.'} */}
@@ -49,4 +51,6 @@ export default Country;
  * 40-2 Display Countries In A Simple Way, Folder Structure
  * 40-4 Toggle State Based On Click And Conditional Rending
  * 40-5 Conditional CSS And Conditional Style
+ * 
+ * 40-7 (Recap) Lift Up The State Recap For Visited Flags
  */
