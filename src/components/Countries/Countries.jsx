@@ -79,4 +79,9 @@ export default Countries;
  * https://react.dev/learn/updating-arrays-in-state
  * Updating Objects in State
  * https://react.dev/learn/updating-objects-in-state
+ * Deploying a Static Site
+ * https://vitejs.dev/guide/static-deploy.html
+ * Command Line Interface
+ * https://vitejs.dev/guide/cli.html
+ * 
  */

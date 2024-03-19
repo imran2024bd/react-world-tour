@@ -62,6 +62,7 @@ export default Country;
  * 
  * 40-7 (Recap) Lift Up The State Recap For Visited Flags
  * 40-8 (Optional) Prop Drilling, Pass Props In Multi Level
- * 
+ * 40-9 Deploy Rest Countries To Surge Or Netlify
+ * link : https://vitejs.dev/guide/static-deploy.html
  * 
  */
