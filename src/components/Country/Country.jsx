@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './country.css';
+import CountryDetail from '../CountryDetail/CountryDetail';
 
 const Country = ({ country , handleVisitedCountry , handleVisitedFlags }) => {
     // console.log(country);
@@ -41,6 +42,13 @@ const Country = ({ country , handleVisitedCountry , handleVisitedFlags }) => {
             {/* { visited && 'I have visited this country.'} */}
 
             {/* <img src={flags.svg} alt="" /> */}
+            <hr />
+            
+            <CountryDetail
+            country = {country}
+            handleVisitedCountry = {handleVisitedCountry}
+            handleVisitedFlags = {handleVisitedFlags}
+            ></CountryDetail>
         </div>
     );
 };
@@ -53,4 +61,7 @@ export default Country;
  * 40-5 Conditional CSS And Conditional Style
  * 
  * 40-7 (Recap) Lift Up The State Recap For Visited Flags
+ * 40-8 (Optional) Prop Drilling, Pass Props In Multi Level
+ * 
+ * 
  */
