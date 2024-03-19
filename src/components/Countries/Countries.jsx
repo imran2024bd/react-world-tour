@@ -29,7 +29,9 @@ const Countries = () => {
         const newVisitedFlags =[...visitedFlags , flag];
         setVisitedFlags(newVisitedFlags);
     }
-
+    
+    // Remove item from an array in a state
+    // use filter to select all the elements except the one you want to remove
 
     return (
         <div >
@@ -47,7 +49,7 @@ const Countries = () => {
             {/* Display Flags */}
             <div className="flag-container">
                     {
-                        visitedFlags.map(flag => <img src= {flag}></img>)
+                        visitedFlags.map((flag, idx) => <img key={idx} src= {flag}></img>)
                     }
             </div>
             {/* Display countries */}
@@ -73,4 +75,8 @@ export default Countries;
  * Resource _______
  * https://restcountries.com/
  * API link_  https://restcountries.com/v3.1/all
+ * Updating Arrays in State
+ * https://react.dev/learn/updating-arrays-in-state
+ * Updating Objects in State
+ * https://react.dev/learn/updating-objects-in-state
  */
